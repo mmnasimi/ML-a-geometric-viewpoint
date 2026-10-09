@@ -30,7 +30,22 @@ jobs:
           pip install "jupyter-book<2.0" "sphinx-book-theme>=1.1"
 
       - name: Build the book
-        run: jupyter-book build book/
+        run: jupyter-book build book/ --all
+
+      - name: Copy PDFs into the build output
+        run: |
+          for session in book/session*/; do
+            name=$(basename "$session")
+            if [ -d "$session" ]; then
+              mkdir -p "book/_build/html/$name"
+              find "$session" -maxdepth 1 -name "*.pdf" -exec cp {} "book/_build/html/$name/" \;
+            fi
+          done
+
+      - name: Verify PDFs are in the build
+        run: |
+          echo "PDFs in build output:"
+          find book/_build/html -name "*.pdf" -exec ls -lh {} \;
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
