@@ -1,0 +1,22 @@
+# Book settings
+# Learn more at https://jupyterbook.org/customize/config.html
+
+title: ML, a geometric viewpoint
+author: Mohammad Mahdi Nasimi
+logo: logo.png
+
+# See https://jupyterbook.org/content/execute.html
+execute:
+  execute_notebooks: "off"
+
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/mmnasimi/ml-a-geometric-viewpoint
+  path_to_book: book
+  branch: main
+
+# Add GitHub buttons to your book
+# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+html:
+  use_issues_button: true
+  use_repository_button: true

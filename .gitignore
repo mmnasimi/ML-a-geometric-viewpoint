@@ -1,0 +1,16 @@
+﻿# Build artifacts
+book/_build/
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+
+# PyCharm
+.idea/
+
+# Private source files (do NOT publish)
+*.pptx
+session*_live.ipynb
+*.docx
+
+# But allow any notebooks you explicitly want public
+!book/**/*.ipynb

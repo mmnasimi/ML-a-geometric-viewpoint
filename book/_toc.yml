@@ -1,0 +1,13 @@
+# book/_toc.yml
+format: jb-book
+root: intro
+chapters:
+  - file: session00/index
+    sections:
+      - file: session00/notes
+      - file: session00/slides
+  - file: session01/index
+    sections:
+      - file: session01/notes
+      - file: session01/slides
+  # ... add more sessions as you create them
