@@ -5,9 +5,7 @@ chapters:
     sections:
       - file: session00/notes
       - file: session00/jupyter
-      - file: session00/slides
   - file: session01/index
     sections:
       - file: session01/notes
       - file: session01/jupyter
-      - file: session01/slides

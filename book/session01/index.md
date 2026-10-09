@@ -1,7 +1,6 @@
-# Session 00: Why This Course Exists
+# Session 01: The Broken Toy
 
 ## Materials
 
 - [**Live notebook**](jupyter.ipynb) — the code demo, rendered inline
 - [**Lecture notes**](notes.md)
-- [**Slides (PDF)**](slides.pdf)

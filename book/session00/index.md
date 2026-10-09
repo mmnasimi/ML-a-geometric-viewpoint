@@ -4,4 +4,3 @@
 
 - [**Live notebook**](jupyter.ipynb) — the code demo, rendered inline
 - [**Lecture notes**](notes.md)
-- [**Slides (PDF)**](slides.pdf)
