@@ -1,18 +1,293 @@
-p {
-    line-height: 1.7;
+/* -----------------------------------------------------------------
+   Custom stylesheet for ML through the lens of representation
+   ----------------------------------------------------------------- */
+
+/* Import a clean typeface */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* -----------------------------------------------------------------
+   1. Typography
+   ----------------------------------------------------------------- */
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16.5px;
+    line-height: 1.75;
+    color: #1f2937;
 }
-h1, h2, h3 {
+
+code, pre, .highlight {
+    font-family: 'JetBrains Mono', 'SF Mono', Consolas, monospace;
+    font-size: 0.9em;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Inter', sans-serif;
     font-weight: 600;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.015em;
+    color: #0f172a;
 }
+
+h1 { font-size: 2.1rem; margin-bottom: 1.2rem; }
+h2 { font-size: 1.6rem; margin-top: 2rem; }
+h3 { font-size: 1.25rem; margin-top: 1.5rem; }
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* -----------------------------------------------------------------
+   2. Links
+   ----------------------------------------------------------------- */
+
 a {
     color: #0d6e6e;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.15s ease;
 }
+
 a:hover {
     color: #0a4f4f;
+    border-bottom-color: #0a4f4f;
 }
-code {
-    background: #f3f3f3;
-    padding: 0.1em 0.35em;
+
+/* -----------------------------------------------------------------
+   3. Sidebar
+   ----------------------------------------------------------------- */
+
+.bd-sidebar-primary {
+    background-color: #f8fafc;
+    border-right: 1px solid #e5e7eb;
+}
+
+.bd-sidebar-primary .bd-sidebar-header {
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 0.75rem;
+}
+
+.bd-sidebar-primary .nav-link {
+    font-size: 0.93rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+}
+
+.bd-sidebar-primary .nav-link.active {
+    background-color: #e0f2f1;
+    color: #0a4f4f;
+    font-weight: 500;
+}
+
+.bd-sidebar-primary .nav-link:hover {
+    background-color: #f0fdfa;
+}
+
+/* Sidebar header (book title) */
+.bd-sidebar-primary .navbar-brand {
+    font-weight: 600;
+    font-size: 0.98rem;
+    color: #0f172a;
+}
+
+/* -----------------------------------------------------------------
+   4. Content area
+   ----------------------------------------------------------------- */
+
+.bd-main .bd-content .bd-article-container {
+    max-width: 780px;
+}
+
+.bd-article {
+    padding-top: 1rem;
+}
+
+/* -----------------------------------------------------------------
+   5. Code blocks
+   ----------------------------------------------------------------- */
+
+div.highlight {
+    border-radius: 6px;
+    border: 1px solid #e5e7eb;
+}
+
+div.highlight pre {
+    background-color: #f9fafb !important;
+    padding: 1rem;
+    margin: 0;
+}
+
+/* Inline code */
+:not(pre) > code {
+    background-color: #f1f5f9;
+    color: #0f172a;
+    padding: 0.1em 0.4em;
     border-radius: 3px;
+    border: none;
+    font-size: 0.88em;
+}
+
+/* -----------------------------------------------------------------
+   6. Blockquotes and admonitions
+   ----------------------------------------------------------------- */
+
+blockquote {
+    border-left: 3px solid #0d6e6e;
+    background-color: #f0fdfa;
+    padding: 0.75rem 1rem;
+    color: #374151;
+    margin: 1.2rem 0;
+    border-radius: 0 4px 4px 0;
+}
+
+/* MyST admonitions */
+div.admonition {
+    border-radius: 6px;
+    border: 1px solid #e5e7eb;
+    padding: 0.9rem 1.1rem;
+    margin: 1.2rem 0;
+}
+
+div.admonition.tip {
+    border-left: 4px solid #0d6e6e;
+    background-color: #f0fdfa;
+}
+
+div.admonition.warning {
+    border-left: 4px solid #d97706;
+    background-color: #fffbeb;
+}
+
+div.admonition.note {
+    border-left: 4px solid #2563eb;
+    background-color: #eff6ff;
+}
+
+div.admonition .admonition-title {
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    color: #0f172a;
+}
+
+/* -----------------------------------------------------------------
+   7. Tables
+   ----------------------------------------------------------------- */
+
+table {
+    border-collapse: collapse;
+    margin: 1.2rem 0;
+    width: 100%;
+    font-size: 0.95rem;
+}
+
+table th {
+    background-color: #f1f5f9;
+    font-weight: 600;
+    padding: 0.6rem 0.8rem;
+    border-bottom: 2px solid #cbd5e1;
+    text-align: left;
+}
+
+table td {
+    padding: 0.55rem 0.8rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+table tr:hover td {
+    background-color: #f8fafc;
+}
+
+/* -----------------------------------------------------------------
+   8. Download buttons (from {download} role)
+   ----------------------------------------------------------------- */
+
+a.download {
+    display: inline-block;
+    background-color: #0d6e6e;
+    color: #ffffff !important;
+    padding: 0.55rem 1.1rem;
+    border-radius: 6px;
+    font-weight: 500;
+    text-decoration: none;
+    border: none;
+    margin: 0.4rem 0;
+    transition: background-color 0.15s ease;
+}
+
+a.download:hover {
+    background-color: #0a4f4f;
+    color: #ffffff !important;
+}
+
+/* -----------------------------------------------------------------
+   9. Footer
+   ----------------------------------------------------------------- */
+
+footer.bd-footer {
+    border-top: 1px solid #e5e7eb;
+    background-color: #f8fafc;
+    font-size: 0.88rem;
+    color: #6b7280;
+    padding: 1.2rem 0;
+}
+
+/* -----------------------------------------------------------------
+   10. Right sidebar (On this page)
+   ----------------------------------------------------------------- */
+
+.bd-sidebar-secondary {
+    font-size: 0.9rem;
+}
+
+.bd-sidebar-secondary .nav-link {
+    padding: 0.2rem 0;
+    color: #4b5563;
+}
+
+.bd-sidebar-secondary .nav-link.active {
+    color: #0d6e6e;
+    font-weight: 500;
+}
+
+/* -----------------------------------------------------------------
+   11. Dark mode adjustments
+   ----------------------------------------------------------------- */
+
+html[data-theme="dark"] body {
+    background-color: #0f172a;
+    color: #e5e7eb;
+}
+
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3,
+html[data-theme="dark"] h4 {
+    color: #f1f5f9;
+}
+
+html[data-theme="dark"] .bd-sidebar-primary {
+    background-color: #1e293b;
+    border-right-color: #334155;
+}
+
+html[data-theme="dark"] .bd-sidebar-primary .nav-link.active {
+    background-color: #134e4a;
+    color: #5eead4;
+}
+
+html[data-theme="dark"] blockquote {
+    background-color: #1e293b;
+    color: #cbd5e1;
+}
+
+html[data-theme="dark"] :not(pre) > code {
+    background-color: #334155;
+    color: #f1f5f9;
+}
+
+html[data-theme="dark"] table th {
+    background-color: #1e293b;
+}
+
+html[data-theme="dark"] a {
+    color: #5eead4;
 }
