@@ -3,4 +3,4 @@
 ## Materials
 
 - [**Live notebook**](jupyter.ipynb) — the code demo, rendered inline
-- [**Lecture notes**](notes.md)
+- [**Lecture notes**](notes.pdf)
