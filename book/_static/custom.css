@@ -1,0 +1,18 @@
+p {
+    line-height: 1.7;
+}
+h1, h2, h3 {
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+a {
+    color: #0d6e6e;
+}
+a:hover {
+    color: #0a4f4f;
+}
+code {
+    background: #f3f3f3;
+    padding: 0.1em 0.35em;
+    border-radius: 3px;
+}

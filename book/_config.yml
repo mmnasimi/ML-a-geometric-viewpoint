@@ -15,8 +15,14 @@ repository:
   path_to_book: book
   branch: main
 
+
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
   use_issues_button: true
   use_repository_button: true
+  use_edit_page_button: true
+  extra_footer: |
+    <p>© 2026 Mohammad Mahdi Nasimi · Content licensed under CC BY-NC-ND 4.0</p>
+  extra_css:
+    - _static/custom.css

@@ -2,10 +2,16 @@ format: jb-book
 root: intro
 chapters:
   - file: session00/index
+    title: "00 — Why This Course Exists"
     sections:
       - file: session00/notes
+        title: "Lecture Notes"
       - file: session00/jupyter
+        title: "Live Notebook"
   - file: session01/index
+    title: "01 — The Broken Toy"
     sections:
       - file: session01/notes
+        title: "Lecture Notes"
       - file: session01/jupyter
+        title: "Live Notebook"
