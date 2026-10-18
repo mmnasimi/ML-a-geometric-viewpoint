@@ -7,20 +7,20 @@ chapters:
       - file: session00/notes
         title: "Lecture Notes"
       - file: session00/jupyter
-        title: "Live Notebook"
+        title: "Jupyter Notebook"
   - file: session01/index
     title: "01 — The Broken Toy"
     sections:
       - file: session01/notes
         title: "Lecture Notes"
       - file: session01/jupyter
-        title: "Live Notebook"
+        title: "Jupyter Notebook"
   - file: session02/index
     title: "02 — The Hidden Shape"
     sections:
       - file: session02/notes
         title: "Lecture Notes"
       - file: session02/jupyter
-        title: "Live Notebook"
+        title: "Jupyter Notebook"
       - file: session02/whiteboard
         title: "Whiteboard"
