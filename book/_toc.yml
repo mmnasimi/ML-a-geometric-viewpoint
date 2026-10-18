@@ -15,3 +15,10 @@ chapters:
         title: "Lecture Notes"
       - file: session01/jupyter
         title: "Live Notebook"
+  - file: session02/index
+    title: "02 — The Hidden Shape"
+    sections:
+      - file: session02/notes
+        title: "Lecture Notes"
+      - file: session02/jupyter
+        title: "Live Notebook"
