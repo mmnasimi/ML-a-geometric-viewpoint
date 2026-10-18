@@ -1,3 +1,8 @@
-# whiteboard
+# Session 02 — Whiteboard
 
-<iframe src="whiteboard.jpg" width="100%" height="900px" style="border:1px solid #ddd;"></iframe>
+:::{figure} whiteboard.jpg
+:alt: Whiteboard notes from Session 02
+:width: 100%
+
+Whiteboard notes and diagrams from our live discussion.
+:::

@@ -4,4 +4,4 @@
 
 * [**Jupyter notebook**](jupyter.ipynb) — the code demo, rendered inline
 * [**Lecture notes**](notes.pdf)
-* [**Whiteboard**](whiteboard.jpg)
+* [**Whiteboard**](whiteboard.md)
