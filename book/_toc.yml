@@ -22,3 +22,5 @@ chapters:
         title: "Lecture Notes"
       - file: session02/jupyter
         title: "Live Notebook"
+      - file: session02/whiteboard
+        title: "Whiteboard"
