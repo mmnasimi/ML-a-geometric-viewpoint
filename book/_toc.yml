@@ -8,6 +8,8 @@ chapters:
         title: "Lecture Notes"
       - file: session00/jupyter
         title: "Jupyter Notebook"
+      - file: session00/presentation
+        title: "Slides"
   - file: session01/index
     title: "01 — The Broken Toy"
     sections:
@@ -15,6 +17,8 @@ chapters:
         title: "Lecture Notes"
       - file: session01/jupyter
         title: "Jupyter Notebook"
+      - file: session01/presentation
+        title: "Slides"
   - file: session02/index
     title: "02 — The Hidden Shape"
     sections:
@@ -24,3 +28,12 @@ chapters:
         title: "Jupyter Notebook"
       - file: session02/whiteboard
         title: "Whiteboard"
+  - file: session03/index
+    title: "02 — The ML Landscape"
+    sections:
+      - file: session03/notes
+        title: "Lecture Notes"
+      - file: session03/jupyter
+        title: "Jupyter Notebook"
+      - file: session01/presentation
+        title: "Slides"
