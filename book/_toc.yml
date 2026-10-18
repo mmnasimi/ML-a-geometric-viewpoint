@@ -35,5 +35,5 @@ chapters:
         title: "Lecture Notes"
       - file: session03/jupyter
         title: "Jupyter Notebook"
-      - file: session01/presentation
+      - file: session03/presentation
         title: "Slides"
