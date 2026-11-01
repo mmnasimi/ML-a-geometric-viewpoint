@@ -37,3 +37,12 @@ chapters:
         title: "Jupyter Notebook"
       - file: session03/presentation
         title: "Slides"
+  - file: session04and05/index
+    title: "04 & 05 — Regression and Optimization"
+    sections:
+      - file: session04and05/jupyter04
+        title: "Jupyter Notebook session 04"
+      - file: session04and05/jupyter05
+        title: "Jupyter Notebook session 05"
+      - file: session04and05/whiteboard
+        title: "Whiteboard"

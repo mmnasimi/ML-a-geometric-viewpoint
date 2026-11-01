@@ -19,7 +19,9 @@ visible to a model.
 - **Session 01 — The Broken Toy.** The cantilever.
 - **Session 02 — The Hidden Shape.** PCA.
 - **Session 03 — The ML Landscape.**
-- **Session 04 — Coming ...**
+- **Session 04 — Linear regression and Gradient descent**
+- **Session 05 — Gradient descent and normal equation**
+- **Session 06 — Coming ...**
 
 ## License
 
